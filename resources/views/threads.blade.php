@@ -12,6 +12,7 @@
                 <div class="panel-body">
                     {{$thread->body}}
                 </div>
+                <div class="small-text">{{$thread->created_at->diffForHumans()}}</div>
                 @endforeach
             </div>
         </div>
